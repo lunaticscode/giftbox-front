@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+:root {
+  font-family: "Poor Story", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(43, 43, 43);
+}
+header {
+  color: #72e74e;
+  position: fixed;
+  top: 0px;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+main {
+  max-width: 450px;
+  align-content: center;
+  height: 100dvh;
+  background-color: rgb(29, 29, 29);
+}
+
+.gift-code-form-wrapper {
+  margin-top: -30px;
+}
+
+.gift-code-form-logo-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.gift-code-form-errormsg-wrapper {
+  display: block;
+  text-align: center;
+  color: rgb(223, 59, 59);
+}
+
+.gift-code-form-input-wrapper {
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.gift-code-form-input-wrapper > input {
+  max-width: 280px;
+  width: 80%;
+  background-color: rgb(70, 70, 70);
+  outline: none;
+  border: none;
+  color: #72e74e;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 10px 5px 10px;
+}
+
+.gift-code-form-button-wrapper {
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.gift-code-form-button-wrapper > button {
+  max-width: 300px;
+  width: 85%;
+  background-color: #72e74e;
+  outline: none;
+  border: none;
+  color: rgb(42, 42, 42);
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  /* padding: 5px 10px 5px 10px; */
+}
+
+.gift-content-wrapper {
+  text-align: center;
+  margin-top: -30px;
+  width: 100%;
+}
+
+.gift-content-img-wrapper {
+  width: 85%;
+  text-align: center;
+  margin-left: 7.5%;
+}
+
+.gift-content-img-wrapper > img {
+  max-width: 300px;
+  max-height: 600px;
+  width: 100%;
+}
+.gift-content-button-save {
+  max-width: 300px;
+  width: 85%;
+  background-color: #72e74e;
+  outline: none;
+  border: none;
+  color: rgb(42, 42, 42);
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.gift-content-button-back {
+  max-width: 300px;
+  width: 85%;
+  background-color: rgb(70, 70, 70);
+  outline: none;
+  border: none;
+  color: rgb(198, 198, 198);
+  font-size: 16px;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 450px) {
+  main {
+    margin-left: calc(50% - 225px);
+  }
+}
+
+.loading-wrapper {
+  text-align: center;
+}
+.lds-ripple,
+.lds-ripple div {
+  box-sizing: border-box;
+}
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 5px solid #72e74e;
+  opacity: 1;
+  border-radius: 10px;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}
